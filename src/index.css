@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* Brand theme tokens using Tailwind v4.1 @theme syntax */
+@theme {
+  --font-display: "Montserrat", "Nunito", "Open Sans", sans-serif;
+  --font-body: "Open Sans", "Roboto", system-ui, sans-serif;
+
+  --color-primary: #4caf50;
+  --color-accent: #2196f3;
+  --color-background: #f9f9f9;
+  --color-gray: #222222;
+}
+
+/* Body background and default font */
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-body);
+  color: var(--color-gray);
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings use display font and are bold */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Utility classes for text and background colors */
+.text-primary    { color: var(--color-primary);    }
+.bg-primary      { background-color: var(--color-primary); }
+.text-accent     { color: var(--color-accent);     }
+.bg-accent       { background-color: var(--color-accent);  }
+.bg-soft         { background-color: var(--color-background); }
+
+.text-body       { font-family: var(--font-body);   }
+.text-display    { font-family: var(--font-display); font-weight: 700; }
+
+/* Buttons (add these classes to your buttons) */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background-color: #43a047;
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+.btn-accent:hover {
+  background-color: #1e88e5;
+}
+
+/* Links use accent color */
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #1976d2;
+}
+
+/* Form elements use body font and primary focus ring */
+input, select, textarea {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-body);
+  color: var(--color-gray);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px #4caf5077;
+}
+
+/* Border color utilities */
+.border-primary { border-color: var(--color-primary); }
+.border-accent  { border-color: var(--color-accent);  }
+
+/* Optional: gradient background for hero/banner */
+.bg-gradient {
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+}
+
