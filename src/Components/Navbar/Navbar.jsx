@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
     
-    <nav className='flex justify-between px-10 py-8'>
+    <nav className='flex justify-between px-20 py-8'>
         <div>
             <h1 className='text-3xl'>CalQulate</h1>
         </div>
