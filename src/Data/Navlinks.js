@@ -1,11 +1,11 @@
 const Navlinks = [
     {
         NavHeader : "Calculate",
-        NavLink : ""
+        NavLink : "/"
     },
     {
         NavHeader : "Weight Gain",
-        NavLink : ""
+        NavLink : "Weightgain"
     },
     {
         NavHeader : "Weight Loss",

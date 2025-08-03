@@ -76,7 +76,7 @@ const HeroSection = () => {
               </label>
 
               <button className="py-5 bg-primary rounded-2xl text-l font-bold text-white cursor-pointer">
-                Calculate Your Maintence Calories
+                Calculate Your Maintenance Calories
               </button>
             </form>
           </div>

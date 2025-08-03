@@ -4,7 +4,7 @@ import Section6Image from "./Assets/Section6.png";
 const Section6 = () => {
   return (
     <>
-      <section className="px-10 pt-20 pb-10 flex gap-x-10 items-center justify-evenly">
+      <section className="px-10 pt-10 pb-10 flex gap-x-10 items-center justify-evenly">
         <div className="w-1/2 flex flex-col gap-y-10">
           <h1 className="text-5xl">
             How CalQulate Empowers You on Your

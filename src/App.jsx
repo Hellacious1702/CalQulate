@@ -3,13 +3,19 @@ import Navbar from './Components/Navbar/Navbar'
 import './index.css'
 import Home from './Pages/Home'
 import Footer from './Components/Footer/Footer'
+import { Router , Route , Routes } from 'react-router-dom'
+import WeightGain from './Pages/WeightGain'
 
 function App() {
   
   return (
     <>
       <Navbar/>
-      <Home/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Weightgain' element={<WeightGain/>}/>
+      </Routes>
+      
       <Footer/>
     </>
   )

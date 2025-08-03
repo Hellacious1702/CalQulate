@@ -62,16 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1e88e5;
 }
 
-/* Links use accent color */
-a {
-  color: var(--color-accent);
-  text-decoration: underline;
-  transition: color 0.2s;
-}
-a:hover {
-  color: #1976d2;
-}
-
 /* Form elements use body font and primary focus ring */
 input, select, textarea {
   border: 1px solid #e0e0e0;

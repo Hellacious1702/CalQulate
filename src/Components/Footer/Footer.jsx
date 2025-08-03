@@ -1,5 +1,6 @@
 import React from 'react'
 import Navlinks from '../../Data/Navlinks'
+import { Link } from 'react-router'
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
 
         <div className='flex gap-x-10'>
             {Navlinks.map((nav) => (
-                <p className='font-bold text-xl cursor-pointer hover:text-primary'>{nav.NavHeader}</p>
+                <Link to={nav.NavLink} className='font-bold text-xl cursor-pointer hover:text-primary'>{nav.NavHeader}</Link>
             ))}
         </div>
 

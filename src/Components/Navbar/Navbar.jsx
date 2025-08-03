@@ -1,5 +1,6 @@
 import React from 'react'
 import Navlinks from '../../Data/Navlinks'
+import { Link } from 'react-router'
 
 const Navbar = () => {
   return (
@@ -12,7 +13,7 @@ const Navbar = () => {
         <div className='flex gap-x-5 text-xl'>
             {
                 Navlinks.map((nav)=>(
-                    <h6 className='cursor-pointer hover:text-primary'>{nav.NavHeader}</h6>
+                    <Link className='cursor-pointer font-bold hover:text-primary' to={nav.NavLink}>{nav.NavHeader}</Link>
                 ))
             }
         </div>
