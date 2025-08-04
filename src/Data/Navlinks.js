@@ -9,7 +9,7 @@ const Navlinks = [
     },
     {
         NavHeader : "Weight Loss",
-        NavLink : ""
+        NavLink : "Weightloss"
     },
     {
         NavHeader : "Excercise",
