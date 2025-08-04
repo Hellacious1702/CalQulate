@@ -12,8 +12,8 @@ const Navlinks = [
         NavLink : "Weightloss"
     },
     {
-        NavHeader : "Excercise",
-        NavLink : ""
+        NavHeader : "Exercise",
+        NavLink : "/Exercise"
     },
 ]
 
